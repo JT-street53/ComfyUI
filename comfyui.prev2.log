@@ -1,0 +1,132 @@
+** ComfyUI startup time: 2024-04-05 04:09:16.445709
+[2024-04-05 04:09] ** Platform: Linux
+[2024-04-05 04:09] ** Python version: 3.10.6 (main, Aug 23 2022, 08:25:41) [GCC 10.2.1 20210110]
+[2024-04-05 04:09] ** Python executable: /usr/local/bin/python
+[2024-04-05 04:09] ** Log path: /workspaces/ComfyUI/comfyui.log
+[2024-04-05 04:09] 
+Prestartup times for custom nodes:
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/rgthree-comfy
+[2024-04-05 04:09]    0.4 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-04-05 04:09] 
+Total VRAM 81051 MB, total RAM 171070 MB
+[2024-04-05 04:09] Set vram state to: NORMAL_VRAM
+[2024-04-05 04:09] Device: cuda:0 NVIDIA A100-SXM4-80GB : cudaMallocAsync
+[2024-04-05 04:09] VAE dtype: torch.bfloat16
+[2024-04-05 04:09] Using pytorch cross attention
+[2024-04-05 04:09] 
+[2024-04-05 04:09] [92m[rgthree] Loaded 36 magnificent nodes.[0m
+[2024-04-05 04:09] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-04-05 04:09] 
+[2024-04-05 04:09] ### Loading: ComfyUI-Manager (V2.12)
+[2024-04-05 04:09] ### ComfyUI Revision: 2095 [e6482fbb] | Released on '2024-04-01'
+[2024-04-05 04:09] [VideoHelperSuite] - [0;33mWARNING[0m - Failed to import imageio_ffmpeg
+[2024-04-05 04:09] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-04-05 04:09] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-04-05 04:09] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-04-05 04:09] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-04-05 04:09] ------------------------------------------
+[2024-04-05 04:09] [34mComfyroll Studio v1.76 : [92m 175 Nodes Loaded[0m
+[2024-04-05 04:09] ------------------------------------------
+[2024-04-05 04:09] ** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+[2024-04-05 04:09] ** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+[2024-04-05 04:09] ------------------------------------------
+[2024-04-05 04:09] Traceback (most recent call last):
+  File "/workspaces/ComfyUI/nodes.py", line 1889, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/ComfyUI/custom_nodes/models/__init__.py'
+
+[2024-04-05 04:09] Cannot import /workspaces/ComfyUI/custom_nodes/models module for custom nodes: [Errno 2] No such file or directory: '/workspaces/ComfyUI/custom_nodes/models/__init__.py'
+[2024-04-05 04:09] [AnimateDiff] - [0;31mERROR[0m - No models available. Please download one and put it in models folder
+[2024-04-05 04:09] [92m[tinyterraNodes] [32mLoaded[0m
+[2024-04-05 04:09] Traceback (most recent call last):
+  File "/workspaces/ComfyUI/nodes.py", line 1889, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/ComfyUI/custom_nodes/ComfyUI_FizzNodes/__init__.py", line 57, in <module>
+    from .ScheduledNodes import (
+  File "/workspaces/ComfyUI/custom_nodes/ComfyUI_FizzNodes/ScheduledNodes.py", line 4, in <module>
+    import numexpr
+ModuleNotFoundError: No module named 'numexpr'
+
+[2024-04-05 04:09] Cannot import /workspaces/ComfyUI/custom_nodes/ComfyUI_FizzNodes module for custom nodes: No module named 'numexpr'
+[2024-04-05 04:09] [AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['/workspaces/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/models', '/workspaces/ComfyUI/models/animatediff_models']
+[2024-04-05 04:09] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /workspaces/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-04-05 04:09] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-04-05 04:09] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-04-05 04:09] /workspaces/ComfyUI/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+  warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
+[2024-04-05 04:09] 
+Import times for custom nodes:
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/websocket_image_save.py
+[2024-04-05 04:09]    0.0 seconds (IMPORT FAILED): /workspaces/ComfyUI/custom_nodes/models
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/sd-dynamic-thresholding
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/stability-ComfyUI-nodes
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/IPAdapter-ComfyUI
+[2024-04-05 04:09]    0.0 seconds (IMPORT FAILED): /workspaces/ComfyUI/custom_nodes/ComfyUI_FizzNodes
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/comfyui-animatediff
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI_UltimateSDUpscale
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/rgthree-comfy
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved
+[2024-04-05 04:09]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI_tinyterraNodes
+[2024-04-05 04:09]    0.1 seconds: /workspaces/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-04-05 04:09]    0.1 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-04-05 04:09]    0.2 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+[2024-04-05 04:09]    0.6 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+[2024-04-05 04:09] 
+[2024-04-05 04:09] Starting server
+
+[2024-04-05 04:09] To see the GUI go to: http://127.0.0.1:8188
+[2024-04-05 04:09] FETCH DATA from: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[2024-04-05 04:09] FETCH DATA from: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
+[2024-04-05 04:09] FETCH DATA from: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+[2024-04-05 04:09] FETCH DATA from: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+[2024-04-05 04:10] install: ['https://github.com/viperyl/ComfyUI-BiRefNet.git']
+[2024-04-05 04:10] Download: git clone 'https://github.com/viperyl/ComfyUI-BiRefNet.git'
+[2024-04-05 04:10] 0it [00:00, ?it/s]100%|██████████████████████████████| 96.0/96.0 [00:00<00:00, 102.72it/s]100%|██████████████████████████████| 96.0/96.0 [00:00<00:00, 102.71it/s]100%|███████████████████████████████| 77.0/77.0 [00:00<00:00, 81.40it/s]100%|███████████████████████████████| 77.0/77.0 [00:00<00:00, 81.39it/s]100%|██████████████████████████████| 96.0/96.0 [00:00<00:00, 100.15it/s]100%|██████████████████████████████| 96.0/96.0 [00:00<00:00, 100.14it/s]100%|███████████████████████████████| 32.0/32.0 [00:00<00:00, 33.27it/s]100%|███████████████████████████████| 32.0/32.0 [00:00<00:00, 33.27it/s]100%|███████████████████████████████| 32.0/32.0 [00:01<00:00, 31.05it/s]
+[2024-04-05 04:10] Install: pip packages
+[2024-04-05 04:10] [ComfyUI-Manager] skip black listed pip installation: 'kornia'
+[2024-04-05 04:10] 
+## ComfyUI-Manager: EXECUTE => ['/usr/local/bin/python', '-m', 'pip', 'install', 'loguru']
+[2024-04-05 04:10]  Collecting loguru
+[2024-04-05 04:10]    Downloading loguru-0.7.2-py3-none-any.whl.metadata (23 kB)
+[2024-04-05 04:10]  Downloading loguru-0.7.2-py3-none-any.whl (62 kB)
+[2024-04-05 04:10]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.5/62.5 kB 9.7 MB/s eta 0:00:00
+[2024-04-05 04:10]  Installing collected packages: loguru
+[2024-04-05 04:10]  Successfully installed loguru-0.7.2
+[2024-04-05 04:10] [2024-04-05 04:10] [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-04-05 04:10] 
+## ComfyUI-Manager: EXECUTE => ['/usr/local/bin/python', '-m', 'pip', 'install', 'opencv-python']
+[2024-04-05 04:10]   [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-04-05 04:10] 
+## ComfyUI-Manager: EXECUTE => ['/usr/local/bin/python', '-m', 'pip', 'install', 'timm']
+[2024-04-05 04:10]  Collecting timm
+[2024-04-05 04:10]    Downloading timm-0.9.16-py3-none-any.whl.metadata (38 kB)
+[2024-04-05 04:10]                                     Downloading timm-0.9.16-py3-none-any.whl (2.2 MB)
+[2024-04-05 04:10]     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 54.3 MB/s eta 0:00:00
+[2024-04-05 04:10]  Installing collected packages: timm
+[2024-04-05 04:10]  Successfully installed timm-0.9.16
+[2024-04-05 04:10] [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-04-05 04:10] 
+## ComfyUI-Manager: EXECUTE => ['/usr/local/bin/python', '-m', 'pip', 'install', 'prettytable']
+[2024-04-05 04:10]  Collecting prettytable
+[2024-04-05 04:10]    Downloading prettytable-3.10.0-py3-none-any.whl.metadata (30 kB)
+[2024-04-05 04:10]   Downloading prettytable-3.10.0-py3-none-any.whl (28 kB)
+[2024-04-05 04:10]  Installing collected packages: prettytable
+[2024-04-05 04:10]  Successfully installed prettytable-3.10.0
+[2024-04-05 04:10] [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-04-05 04:10] 
+## ComfyUI-Manager: EXECUTE => ['/usr/local/bin/python', '-m', 'pip', 'install', 'scipy']
+[2024-04-05 04:10]   [!] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[2024-04-05 04:10] Install: install script
+[2024-04-05 04:10] 
+## ComfyUI-Manager: EXECUTE => ['/usr/local/bin/python', 'install.py']
+[2024-04-05 04:10] Installation was successful.
+[2024-04-05 04:10] After restarting ComfyUI, please refresh the browser.
+
+Stopped server

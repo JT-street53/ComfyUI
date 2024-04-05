@@ -1,0 +1,135 @@
+** ComfyUI startup time: 2024-04-05 04:19:36.237114
+[2024-04-05 04:19] ** Platform: Linux
+[2024-04-05 04:19] ** Python version: 3.10.6 (main, Aug 23 2022, 08:25:41) [GCC 10.2.1 20210110]
+[2024-04-05 04:19] ** Python executable: /usr/local/bin/python
+[2024-04-05 04:19] ** Log path: /workspaces/ComfyUI/comfyui.log
+[2024-04-05 04:19] 
+Prestartup times for custom nodes:
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/rgthree-comfy
+[2024-04-05 04:19]    0.2 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-04-05 04:19] 
+Total VRAM 81051 MB, total RAM 171070 MB
+[2024-04-05 04:19] Set vram state to: NORMAL_VRAM
+[2024-04-05 04:19] Device: cuda:0 NVIDIA A100-SXM4-80GB : cudaMallocAsync
+[2024-04-05 04:19] VAE dtype: torch.bfloat16
+[2024-04-05 04:19] Using pytorch cross attention
+[2024-04-05 04:19] 
+[2024-04-05 04:19] [92m[rgthree] Loaded 36 extraordinary nodes.[0m
+[2024-04-05 04:19] [92m[rgthree] Will use rgthree's optimized recursive execution.[0m
+[2024-04-05 04:19] 
+[2024-04-05 04:19] ### Loading: ComfyUI-Manager (V2.12)
+[2024-04-05 04:19] ### ComfyUI Revision: 2095 [e6482fbb] | Released on '2024-04-01'
+[2024-04-05 04:19] [VideoHelperSuite] - [0;33mWARNING[0m - Failed to import imageio_ffmpeg
+[2024-04-05 04:19] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-04-05 04:19] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-04-05 04:19] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-04-05 04:19] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-04-05 04:19] ------------------------------------------
+[2024-04-05 04:19] [34mComfyroll Studio v1.76 : [92m 175 Nodes Loaded[0m
+[2024-04-05 04:19] ------------------------------------------
+[2024-04-05 04:19] ** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+[2024-04-05 04:19] ** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+[2024-04-05 04:19] ------------------------------------------
+[2024-04-05 04:19] Traceback (most recent call last):
+  File "/workspaces/ComfyUI/nodes.py", line 1889, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1016, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1073, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: '/workspaces/ComfyUI/custom_nodes/models/__init__.py'
+
+[2024-04-05 04:19] Cannot import /workspaces/ComfyUI/custom_nodes/models module for custom nodes: [Errno 2] No such file or directory: '/workspaces/ComfyUI/custom_nodes/models/__init__.py'
+[2024-04-05 04:19] [AnimateDiff] - [0;31mERROR[0m - No models available. Please download one and put it in models folder
+[2024-04-05 04:19] [92m[tinyterraNodes] [32mLoaded[0m
+[2024-04-05 04:19] Traceback (most recent call last):
+  File "/workspaces/ComfyUI/nodes.py", line 1889, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/workspaces/ComfyUI/custom_nodes/ComfyUI_FizzNodes/__init__.py", line 57, in <module>
+    from .ScheduledNodes import (
+  File "/workspaces/ComfyUI/custom_nodes/ComfyUI_FizzNodes/ScheduledNodes.py", line 4, in <module>
+    import numexpr
+ModuleNotFoundError: No module named 'numexpr'
+
+[2024-04-05 04:19] Cannot import /workspaces/ComfyUI/custom_nodes/ComfyUI_FizzNodes module for custom nodes: No module named 'numexpr'
+[2024-04-05 04:19] [AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['/workspaces/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved/models', '/workspaces/ComfyUI/models/animatediff_models']
+[2024-04-05 04:19] [36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: /workspaces/ComfyUI/custom_nodes/comfyui_controlnet_aux/ckpts[0m
+[2024-04-05 04:19] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-04-05 04:19] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-04-05 04:19] /workspaces/ComfyUI/custom_nodes/comfyui_controlnet_aux/node_wrappers/dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+  warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
+[2024-04-05 04:19] 
+Import times for custom nodes:
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/websocket_image_save.py
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/stability-ComfyUI-nodes
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/sd-dynamic-thresholding
+[2024-04-05 04:19]    0.0 seconds (IMPORT FAILED): /workspaces/ComfyUI/custom_nodes/models
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/IPAdapter-ComfyUI
+[2024-04-05 04:19]    0.0 seconds (IMPORT FAILED): /workspaces/ComfyUI/custom_nodes/ComfyUI_FizzNodes
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/comfyui-animatediff
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI_UltimateSDUpscale
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-Advanced-ControlNet
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/rgthree-comfy
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/comfyui_controlnet_aux
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI_tinyterraNodes
+[2024-04-05 04:19]    0.0 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+[2024-04-05 04:19]    0.1 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager
+[2024-04-05 04:19]    0.3 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI-BiRefNet
+[2024-04-05 04:19]    0.4 seconds: /workspaces/ComfyUI/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+[2024-04-05 04:19] 
+[2024-04-05 04:19] Starting server
+
+[2024-04-05 04:19] To see the GUI go to: http://127.0.0.1:8188
+[2024-04-05 04:19] FETCH DATA from: /workspaces/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+[2024-04-05 04:19] got prompt
+[2024-04-05 04:19] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-04-05 04:19] [32m[rgthree][0m First run patching recursive_output_delete_if_changed and recursive_will_execute.[0m
+[2024-04-05 04:19] [33m[rgthree] Note: [0mIf execution seems broken due to forward ComfyUI changes, you can disable the optimization from rgthree settings in ComfyUI.[0m
+[2024-04-05 04:19] Found correct weights in the "model" item of loaded state_dict.
+[2024-04-05 04:19] 2024-04-05 04:19:50.316 | ERROR    | ComfyUI-BiRefNet.BiRefNet_node:load:65 - Failed to load the model: invalid load key, '<'.
+[2024-04-05 04:19] !!! Exception during processing !!!
+[2024-04-05 04:19] Traceback (most recent call last):
+  File "/workspaces/ComfyUI/custom_nodes/ComfyUI-BiRefNet/BiRefNet_node.py", line 50, in load
+    state_dict = torch.load(weight_path, map_location=map_location)
+  File "/usr/local/lib/python3.10/site-packages/torch/serialization.py", line 1040, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/usr/local/lib/python3.10/site-packages/torch/serialization.py", line 1258, in _legacy_load
+    magic_number = pickle_module.load(f, **pickle_load_args)
+_pickle.UnpicklingError: invalid load key, '<'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspaces/ComfyUI/execution.py", line 151, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "/workspaces/ComfyUI/execution.py", line 81, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "/workspaces/ComfyUI/execution.py", line 74, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "/workspaces/ComfyUI/custom_nodes/ComfyUI-BiRefNet/BiRefNet_node.py", line 101, in matting
+    self.load(weight_path, device=device)
+  File "/workspaces/ComfyUI/custom_nodes/ComfyUI-BiRefNet/BiRefNet_node.py", line 67, in load
+    raise RuntimeError(f"Model loading failed: {e}")
+RuntimeError: Model loading failed: invalid load key, '<'.
+
+[2024-04-05 04:19] Prompt executed in 2.42 seconds
+[2024-04-05 04:41] got prompt
+[2024-04-05 04:41] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-04-05 04:41] Found correct weights in the "model" item of loaded state_dict.
+[2024-04-05 04:41] 2024-04-05 04:41:40.544 | DEBUG    | ComfyUI-BiRefNet.BiRefNet_node:matting:106 - torch.Size([1, 3, 1024, 1024])
+[2024-04-05 04:41] Prompt executed in 5.27 seconds
+[2024-04-05 04:54] got prompt
+[2024-04-05 04:54] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-04-05 04:54] 2024-04-05 04:54:44.469 | DEBUG    | ComfyUI-BiRefNet.BiRefNet_node:matting:106 - torch.Size([1, 3, 1024, 1024])
+[2024-04-05 04:54] Prompt executed in 0.37 seconds
+[2024-04-05 04:56] got prompt
+[2024-04-05 04:56] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-04-05 04:56] 2024-04-05 04:56:49.598 | DEBUG    | ComfyUI-BiRefNet.BiRefNet_node:matting:106 - torch.Size([1, 3, 1024, 1024])
+[2024-04-05 04:56] Prompt executed in 0.37 seconds
+[2024-04-05 04:58] got prompt
+[2024-04-05 04:58] [32m[rgthree] Using rgthree's optimized recursive execution.[0m
+[2024-04-05 04:58] 2024-04-05 04:58:36.318 | DEBUG    | ComfyUI-BiRefNet.BiRefNet_node:matting:106 - torch.Size([1, 3, 1024, 1024])
+[2024-04-05 04:58] Prompt executed in 0.35 seconds
